@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => (
   <header className="header">
-    <a href="#" className="logo">Ahmed</a>
+
     <nav className="navbar">
       <a href="#Home" className="active">Home</a>
       <a href="#About">About</a>
@@ -12,9 +12,10 @@ const Header = () => (
       <a href="#Skills">Skills</a>
       <a href="#Contact">Contact</a>
       <a href="#Projects">Projects</a>
-      <a href="/Ahmed_Ali_Software_Engineer_Resume-4.pdf" download>
+      <a href="./Ahmed_Ali_Software_Engineer_Resume-4.pdf" download>
   Download Resume
 </a>
+
 
     </nav>
   </header>

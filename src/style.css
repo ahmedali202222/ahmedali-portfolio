@@ -41,12 +41,12 @@ body {
 }
 
 .logo {
-  font-size: 75px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  cursor: default;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
 }
+
 
 .navbar {
   display: flex;
