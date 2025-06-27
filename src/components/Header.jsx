@@ -12,7 +12,9 @@ const Header = () => (
       <a href="#Skills">Skills</a>
       <a href="#Contact">Contact</a>
       <a href="#Projects">Projects</a>
-      <a href="/resume.pdf" download className="resume-btn">Download Resume</a>
+      <a href="/Ahmed_Ali_Software_Engineer_Resume-4.pdf" download>
+  Download Resume
+</a>
 
     </nav>
   </header>
