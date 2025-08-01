@@ -18,15 +18,16 @@ const Experience = () => (
       </ul>
     </div>
 
-    <div className="Experience-item">
-      <h3>Data Analysis Trainee (Part-Time)</h3>
-      <h4>Global Tech | Remote | Jan 2024 - May 2024</h4>
-      <ul>
-        <li>Analyzed Instacart order data, identifying a 15% discrepancy between reported issues and customer ratings.</li>
-        <li>Conducted YouTube engagement analysis, finding that 10% of high-view videos lacked interactions.</li>
-        <li>Developed user-friendly guides for analytical tools, increasing adoption by 40% within three weeks.</li>
-      </ul>
-    </div>
+  <div className="Experience-item">
+  <h3>Software Engineering Trainee (Part-Time)</h3>
+  <h4>Global Tech | Remote | Jan 2024 – May 2024</h4>
+  <ul>
+    <li>Developed lightweight internal web tools using SQLPad and JavaScript to analyze Instacart order data and flag inconsistencies between reported issues and customer ratings.</li>
+    <li>Collaborated with the data team to implement a “Resolved Issue Rate” and “Disabled Interactions” metric, improving user behavior insights for YouTube and Instacart case studies.</li>
+    <li>Created internal guides and refined UI elements, boosting tool usage by 40% and accelerating new analyst onboarding.</li>
+  </ul>
+</div>
+
   </section>
 );
 
