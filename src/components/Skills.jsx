@@ -8,7 +8,7 @@ const Skills = () => {
     frontend: {
       title: 'Frontend Development',
       icon: <FaCode />,
-      color: '#61dafb',
+      color: '#f0c040',
       skills: [
         { name: 'React.js', level: 95, experience: '3+ years' },
         { name: 'JavaScript/ES6+', level: 92, experience: '3+ years' },
@@ -21,7 +21,7 @@ const Skills = () => {
     backend: {
       title: 'Backend Development',
       icon: <FaDatabase />,
-      color: '#4caf50',
+      color: '#d4af37',
       skills: [
         { name: 'Python', level: 95, experience: '4+ years' },
         { name: 'Django/Flask', level: 90, experience: '3+ years' },
@@ -34,7 +34,7 @@ const Skills = () => {
     cloud: {
       title: 'Cloud & DevOps',
       icon: <FaCloud />,
-      color: '#ff9800',
+      color: '#e8c84a',
       skills: [
         { name: 'AWS', level: 85, experience: '2+ years' },
         { name: 'Docker', level: 80, experience: '2+ years' },
@@ -47,7 +47,7 @@ const Skills = () => {
     tools: {
       title: 'Tools & Technologies',
       icon: <FaTools />,
-      color: '#9c27b0',
+      color: '#ffffff',
       skills: [
         { name: 'Git/GitHub', level: 95, experience: '4+ years' },
         { name: 'VS Code', level: 95, experience: '4+ years' },
@@ -68,9 +68,9 @@ const Skills = () => {
       <div className="skill-bar">
         <div 
           className="skill-progress" 
-          style={{ 
+          style={{
             width: `${skill.level}%`,
-            backgroundColor: skillCategories[activeCategory].color
+            background: `linear-gradient(90deg, #b8960c, ${skillCategories[activeCategory].color})`
           }}
         >
           <span className="skill-percentage">{skill.level}%</span>
