@@ -6,7 +6,7 @@ const Home = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const roles = [
     'Full-Stack Developer',
-    'Motivated Engineer',
+    'Web Designer',
     'Software Engineer',
     'Problem Solver'
   ];
@@ -42,9 +42,9 @@ const Home = () => {
           </span>
         </h3>
         <p className="Home-description" data-aos="fade-up" data-aos-delay="400">
-          Passionate about building scalable web applications and innovative solutions.
-          I specialize in React, Python, and cloud technologies to deliver exceptional
-          digital experiences that drive business growth.
+          Passionate about building scalable web applications and crafting clean, functional designs.
+          I specialise in React, PHP, JavaScript, and Firebase to deliver full-stack products and
+          digital experiences that drive real business results.
         </p>
         <div className="stats-preview" data-aos="fade-up" data-aos-delay="500">
           <div className="stat-item">

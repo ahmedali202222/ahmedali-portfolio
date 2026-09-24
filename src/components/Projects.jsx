@@ -7,6 +7,32 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 0,
+      title: "PrimeOrbit – Lead Generation & Website Audit Tool",
+      category: "fullstack",
+      featured: true,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
+      description: "Full-stack internal SaaS tool for SEO-based lead generation — discovers domains via Google SERP, audits websites in real time, scores them across SEO/conversion/trust/technical dimensions, and generates personalised outreach emails.",
+      fullDescription: "Built entirely in PHP and MySQL with a responsive Bootstrap UI. Features a real website audit pipeline using cURL and DOMDocument, WHOIS API integration, bulk mass-mail sending, Smartlead CSV export, async processing, and a domain management dashboard with filtering and manual entry.",
+      technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "REST APIs", "cURL", "Google SERP API", "WHOIS API"],
+      keyFeatures: [
+        "Real-time website audit pipeline — SEO, conversion, trust & technical scoring (0–100)",
+        "Google SERP scraping + WHOIS API contact enrichment with multi-page detection",
+        "AI-assisted personalised outreach email generation from real audit findings",
+        "Bulk mass-mail sending & Smartlead-compatible CSV export",
+        "Responsive Bootstrap dashboard — modals, async progress, sortable domain tables"
+      ],
+      metrics: {
+        scoring: "4-dimension scoring",
+        export: "Smartlead CSV",
+        pipeline: "Fully async"
+      },
+      links: {
+        github: "https://github.com/ahmedali202222"
+      },
+      status: "Production"
+    },
+    {
       id: 1,
       title: "Promofly – Business Automation Platform",
       category: "fullstack",
@@ -139,7 +165,7 @@ const Projects = () => {
     {
       id: 6,
       title: "Luxe Touch E-commerce Platform",
-      category: "ecommerce",
+      category: "webdesign",
       featured: false,
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
       description: "Modern e-commerce solution for Luxe Touch featuring automated inventory management, optimized UI/UX design, and seamless customer experience.",
@@ -169,7 +195,8 @@ const Projects = () => {
     { id: 'ai', label: 'AI/ML', icon: <FaChartBar /> },
     { id: 'analytics', label: 'Analytics', icon: <FaChartBar /> },
     { id: 'mobile', label: 'Mobile Apps', icon: <FaUsers /> },
-    { id: 'ecommerce', label: 'E-commerce', icon: <FaUsers /> }
+    { id: 'ecommerce', label: 'E-commerce', icon: <FaUsers /> },
+    { id: 'webdesign', label: 'Web Design', icon: <FaExternalLinkAlt /> }
   ];
 
   const filteredProjects = selectedCategory === 'all' 
