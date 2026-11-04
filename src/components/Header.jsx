@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaDownload } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,7 +79,7 @@ const Header = () => {
             className="resume-btn"
             aria-label="Download Ahmed Ali's Resume"
           >
-            <i className='bx bx-download'></i>
+            <FaDownload aria-hidden="true" />
             Resume
           </a>
         </nav>
@@ -125,7 +126,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               aria-label="Download Ahmed Ali's Resume"
             >
-              <i className='bx bx-download'></i>
+              <FaDownload aria-hidden="true" />
               Download Resume
             </a>
           </nav>

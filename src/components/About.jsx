@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaRocket, FaUsers, FaAward } from 'react-icons/fa';
+import { FaAward, FaCheckCircle, FaCode, FaCommentDots, FaRocket, FaUsers } from 'react-icons/fa';
 
 const About = () => {
   const achievements = [
@@ -52,19 +52,19 @@ const About = () => {
             </p>
             <div className="about-highlights">
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Full-Stack Development (MERN, Python/Django)</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Cloud Computing (AWS, Firebase, Azure)</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>DevOps & CI/CD Implementation</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Performance Optimization & Scalability</span>
               </div>
             </div>
@@ -97,7 +97,7 @@ const About = () => {
             <h4>Ready to collaborate?</h4>
             <p>Let's discuss how we can bring your ideas to life with cutting-edge technology.</p>
             <a href="#Contact" className="cta-button">
-              <i className='bx bx-message-dots'></i>
+              <FaCommentDots aria-hidden="true" />
               Let's Connect
             </a>
           </div>

@@ -1,5 +1,4 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Reset and Base Styles */
 * {
@@ -2890,3 +2889,86 @@ background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
     max-width: none;
   }
     
+
+/* ------------------------------------------------------------------ */
+/* Layout and accessibility fixes                                      */
+/* ------------------------------------------------------------------ */
+h2,
+.experience-header h2,
+.skills-header h2,
+.testimonials-header h2,
+.projects-header h2,
+.education-header h2 {
+  font-size: clamp(1.7rem, 6.5vw, 3rem);
+  letter-spacing: 0.5px;
+  overflow-wrap: break-word;
+}
+
+/* .highlight-item is shared by About (a flex row) and Experience (a card) */
+.highlights-grid .highlight-item {
+  display: block;
+  text-align: left;
+}
+
+.project-card {
+  position: relative;
+}
+
+.project-banner {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-size: 2rem;
+  color: var(--accent);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.02));
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.status-badge.in-development {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold-bright);
+}
+
+.author-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-initial {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.highlight-item svg,
+.social-link svg,
+.btn svg,
+.cta-button svg,
+.resume-btn svg,
+.mobile-resume-btn svg {
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .project-features ul li:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

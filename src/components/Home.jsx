@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import InteractiveCanvas from './InteractiveCanvas';
-import profileImg from '../assets/profile.jpeg';
+import profileImg from '../assets/profile.webp';
+import { FaBriefcase, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Home = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -20,7 +21,7 @@ const Home = () => {
   }, [roles.length]);
 
   return (
-    <section className="Home" id="Home" role="main" aria-label="Introduction">
+    <section className="Home" id="Home" aria-label="Introduction">
       <InteractiveCanvas />
       <div className="Home-content" data-aos="fade-right" data-aos-delay="200">
         <div className="greeting-badge" data-aos="fade-up" data-aos-delay="100">
@@ -66,7 +67,7 @@ const Home = () => {
             className="btn primary-btn"
             aria-label="Send email to Ahmed Ali"
           >
-            <i className='bx bx-envelope'></i>
+            <FaEnvelope aria-hidden="true" />
             Contact Me
           </a>
           <a
@@ -78,7 +79,7 @@ const Home = () => {
             }}
             aria-label="View Ahmed Ali's projects"
           >
-            <i className='bx bx-briefcase'></i>
+            <FaBriefcase aria-hidden="true" />
             View Projects
           </a>
         </div>
@@ -90,7 +91,7 @@ const Home = () => {
             className="social-link"
             aria-label="Visit Ahmed Ali's LinkedIn profile"
           >
-            <i className='bx bxl-linkedin'></i>
+            <FaLinkedinIn aria-hidden="true" />
           </a>
           <a
             href="https://github.com/ahmedali202222"
@@ -99,14 +100,14 @@ const Home = () => {
             className="social-link"
             aria-label="Visit Ahmed Ali's GitHub profile"
           >
-            <i className='bx bxl-github'></i>
+            <FaGithub aria-hidden="true" />
           </a>
           <a
             href="mailto:ahmedaliofficial90@gmail.com"
             className="social-link"
             aria-label="Send email to Ahmed Ali"
           >
-            <i className='bx bx-envelope'></i>
+            <FaEnvelope aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -120,6 +121,9 @@ const Home = () => {
               src={profileImg}
               alt="Ahmed Ali - Software Engineer and Full-Stack Developer"
               loading="eager"
+              fetchPriority="high"
+              width="640"
+              height="960"
             />
           </div>
           <div className="availability-badge">

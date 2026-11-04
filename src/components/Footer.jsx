@@ -1,15 +1,8 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaHeart, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
 
   const quickLinks = [
     { name: 'About', href: '#About' },
@@ -149,23 +142,10 @@ const Footer = () => {
             </div>
             
             <div className="footer-bottom-links">
-              <a href="/privacy">Privacy Policy</a>
-              <a href="/terms">Terms of Service</a>
               <a href="#Contact">Hire Me</a>
             </div>
           </div>
         </div>
-
-        {/* Scroll to Top Button */}
-        <button 
-          className="scroll-to-top"
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <FaArrowUp />
-        </button>
       </div>
     </footer>
   );
