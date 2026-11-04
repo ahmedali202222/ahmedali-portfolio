@@ -57,7 +57,7 @@ export default function InteractiveCanvas() {
           vy: Math.sin(angle) * speed,
           life: 1,
           size: Math.random() * 2 + 1.2,
-          hue: 185 + Math.random() * 30, // cyan/teal range
+          hue: 212 + Math.random() * 12, // brand blue
         });
       }
     }
@@ -76,7 +76,7 @@ export default function InteractiveCanvas() {
           vy: Math.sin(angle) * speed,
           life: 1,
           size: Math.random() * 2 + 1.5,
-          hue: 185 + Math.random() * 30,
+          hue: 212 + Math.random() * 12,
         });
       }
     }
@@ -109,7 +109,7 @@ export default function InteractiveCanvas() {
           const dy = a.y - b.y;
           const d2 = dx * dx + dy * dy;
           if (d2 < 1000) {
-            ctx.strokeStyle = `hsla(185, 85%, 60%, ${0.08 * (1 - d2 / 1000)})`;
+            ctx.strokeStyle = `hsla(215, 80%, 70%, ${0.08 * (1 - d2 / 1000)})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
