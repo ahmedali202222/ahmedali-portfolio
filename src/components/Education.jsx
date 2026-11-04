@@ -99,24 +99,6 @@ const Education = () => {
             </div>
           ))}
         </div>
-
-        <div className="education-summary" data-aos="fade-up" data-aos-delay="600">
-          <h3>Academic Achievements</h3>
-          <div className="achievements-grid">
-            <div className="achievement-item">
-              <h4>Consistent Performance</h4>
-              <p>Maintained 3.3 GPA across both undergraduate and pre-engineering programs</p>
-            </div>
-            <div className="achievement-item">
-              <h4>Technical Foundation</h4>
-              <p>Strong grounding in algorithms, data structures, and software engineering principles</p>
-            </div>
-            <div className="achievement-item">
-              <h4>Practical Application</h4>
-              <p>Hands-on experience in web and mobile app development through coursework</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

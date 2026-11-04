@@ -1244,7 +1244,8 @@ section {
   color: #cbd5e1;
 }
 
-.highlight-item i {
+.highlight-item i,
+.highlight-item svg {
   color: #ffffff;
   font-size: 1.2rem;
 }
@@ -2971,4 +2972,51 @@ h2,
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 20px;
+}
+
+.skill-group {
+  background: var(--surface);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.skill-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.skill-group h3 svg {
+  color: var(--accent);
+}
+
+.skill-group .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.testimonials-content {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.Home {
+  overflow-x: clip;
 }

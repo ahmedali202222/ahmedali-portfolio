@@ -1,25 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import InteractiveCanvas from './InteractiveCanvas';
 import profileImg from '../assets/profile.webp';
 import { FaBriefcase, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Home = () => {
-  const [currentRole, setCurrentRole] = useState(0);
-  const roles = [
-    'Full-Stack Developer',
-    'Web Designer',
-    'Software Engineer',
-    'Problem Solver'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [roles.length]);
-
   return (
     <section className="Home" id="Home" aria-label="Introduction">
       <InteractiveCanvas />
@@ -32,33 +16,24 @@ const Home = () => {
           Hi, I'm <span className="name-highlight">Ahmed Ali</span>
         </h1>
         <h3>
-          I'm a{' '}
-          <span
-            className="multiple-text"
-            key={currentRole}
-            aria-live="polite"
-            aria-label={`Current role: ${roles[currentRole]}`}
-          >
-            {roles[currentRole]}
-          </span>
+          <span className="multiple-text">Full-Stack Software Engineer</span>
         </h3>
         <p className="Home-description" data-aos="fade-up" data-aos-delay="400">
-          Passionate about building scalable web applications and crafting clean, functional designs.
-          I specialise in React, PHP, JavaScript, and Firebase to deliver full-stack products and
-          digital experiences that drive real business results.
+          I build full-stack web products with React, Python, PHP and Firebase, and I bring hands-on
+          experience keeping automated production systems running on the factory floor.
         </p>
         <div className="stats-preview" data-aos="fade-up" data-aos-delay="500">
           <div className="stat-item">
-            <span className="stat-number">15+</span>
+            <span className="stat-number">7</span>
             <span className="stat-label">Projects</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">5+</span>
-            <span className="stat-label">Years Exp.</span>
+            <span className="stat-number">B.S.</span>
+            <span className="stat-label">Computer Science</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">20+</span>
-            <span className="stat-label">Team Projects</span>
+            <span className="stat-number">26%</span>
+            <span className="stat-label">Downtime Reduced</span>
           </div>
         </div>
         <div className="Home-actions" data-aos="fade-up" data-aos-delay="600">

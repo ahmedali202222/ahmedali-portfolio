@@ -96,7 +96,6 @@ const Projects = () => {
       category: "fullstack",
       featured: true,
       description: "Full-stack internal SaaS tool for SEO-based lead generation — discovers domains via Google SERP, audits websites in real time, scores them across SEO/conversion/trust/technical dimensions, and generates personalised outreach emails.",
-      fullDescription: "Built entirely in PHP and MySQL with a responsive Bootstrap UI. Features a real website audit pipeline using cURL and DOMDocument, WHOIS API integration, bulk mass-mail sending, Smartlead CSV export, async processing, and a domain management dashboard with filtering and manual entry.",
       technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "REST APIs", "cURL", "Google SERP API", "WHOIS API"],
       keyFeatures: [
         "Real-time website audit pipeline — SEO, conversion, trust & technical scoring (0–100)",
@@ -115,68 +114,53 @@ const Projects = () => {
     },
     {
       id: 1,
-      title: "Promofly – Business Automation Platform",
+      title: "Promofly – Social Media Scheduling Platform",
       category: "fullstack",
       featured: true,
-      description: "Revolutionary full-stack platform enabling small businesses to automate marketing video creation and social media publishing across TikTok, Instagram, and Facebook.",
-      fullDescription: "A comprehensive business automation solution featuring real-time analytics, admin review systems, and seamless social media integration. Built with scalability and performance in mind.",
-      technologies: ["React", "Firebase", "Tailwind CSS", "Recharts", "Cloud Functions", "Authentication"],
+      description: "A social media management app I'm building to help small businesses schedule and publish content across multiple platforms from one place.",
+      technologies: ["React", "Firebase", "Cloud Functions", "Firestore"],
       keyFeatures: [
-        "Automated video generation and publishing",
-        "Multi-platform social media integration", 
-        "Real-time analytics dashboard",
-        "Admin review and approval workflow"
+        "Multi-platform post scheduling",
+        "Instagram, Facebook and TikTok integrations",
+        "Serverless publishing pipeline on Cloud Functions"
       ],
-      metrics: {
-        users: "50+ businesses",
-        performance: "95% uptime",
-        engagement: "200% increase"
-      },
       links: {},
-      status: "Production"
+      status: "In Development"
     },
     {
       id: 2,
-      title: "AI-Powered Historical Insights Platform",
+      title: "L-CHII – AI-Powered History of Iran",
       category: "ai",
       featured: true,
-      description: "Advanced web application leveraging AI-powered Retrieval-Augmented Generation (RAG) to deliver real-time historical insights with intelligent transcription management.",
-      fullDescription: "Cutting-edge platform combining machine learning with historical data analysis, featuring advanced user authentication, intelligent search capabilities, and seamless cloud integration.",
-      technologies: ["React", "Firebase", "Flask", "Python", "AWS", "Machine Learning", "RAG"],
+      description: "A web application that uses an LLM with Retrieval-Augmented Generation (RAG) to answer questions about the contemporary history of Iran in real time.",
+      technologies: ["React", "Flask", "Python", "Firebase", "RAG", "TestRail", "Selenium"],
       keyFeatures: [
-        "AI-powered content generation",
-        "Real-time historical data analysis",
-        "Advanced user authentication system",
-        "Intelligent transcription management"
+        "LLM answers grounded with RAG",
+        "Led front-end development in React",
+        "Test cases managed with TestRail and Selenium"
       ],
       metrics: {
-        accuracy: "95% AI accuracy",
-        processing: "< 2s response time",
-        data: "10K+ documents"
+        "bug resolution": "60% faster"
       },
       links: {
         github: "https://github.com/4996wsu/LLM-for-the-Contemporary-History-of-Iran"
       },
-      status: "Beta"
+      status: "Completed"
     },
     {
       id: 3,
-      title: "Intel Data Center Optimization Study",
+      title: "Data Center Site Selection Analysis",
       category: "analytics",
       featured: false,
-      description: "Comprehensive data-driven analysis for Intel's strategic data center placement, focusing on energy sustainability and operational efficiency across the United States.",
-      fullDescription: "Advanced analytics project combining energy consumption patterns, geographical data, and sustainability metrics to optimize Intel's data center network deployment strategy.",
-      technologies: ["SQL", "SQLPad", "Tableau", "Python", "Data Analytics"],
+      description: "An analysis exercise using energy and sustainability data to compare locations for an Intel data center, identifying the Northwest as a leader in renewable resources.",
+      technologies: ["SQL", "SQLPad", "Tableau"],
       keyFeatures: [
-        "Multi-factor location analysis",
-        "Energy sustainability modeling",
-        "Interactive data visualizations",
-        "Strategic recommendations engine"
+        "Energy data compared across all 50 states",
+        "Sustainability analysis by region",
+        "Tableau visualizations and recommendations"
       ],
       metrics: {
-        locations: "50+ analyzed",
-        efficiency: "30% cost reduction",
-        sustainability: "40% energy savings"
+        coverage: "50 states"
       },
       links: {},
       status: "Completed"
@@ -186,8 +170,7 @@ const Projects = () => {
       title: "Entertainment Industry UX Analysis",
       category: "analytics",
       featured: false,
-      description: "In-depth comparative analysis of user engagement patterns between Grammy and AMA websites, identifying key UX improvement opportunities.",
-      fullDescription: "Comprehensive user experience study utilizing advanced analytics to compare engagement metrics, user behavior patterns, and interface effectiveness across major entertainment platforms.",
+      description: "Comparative analysis of user engagement patterns between Grammy and AMA websites, identifying UX improvement opportunities.",
       technologies: ["Python", "Pandas", "Plotly", "SQL", "Data Visualization"],
       keyFeatures: [
         "Cross-platform engagement analysis",
@@ -195,11 +178,6 @@ const Projects = () => {
         "Interactive dashboard creation",
         "UX improvement recommendations"
       ],
-      metrics: {
-        engagement: "85% improvement",
-        analysis: "500K+ interactions",
-        insights: "20+ actionable findings"
-      },
       links: {},
       status: "Completed"
     },
@@ -209,7 +187,6 @@ const Projects = () => {
       category: "mobile",
       featured: true,
       description: "Comprehensive collection of 4+ experimental Android applications built with Java and Android Studio, showcasing practical UI/UX implementation, user input handling, and system-level integrations.",
-      fullDescription: "Developed multiple Android applications demonstrating proficiency in mobile development, including food delivery systems, interactive galleries, and native Android feature integration with responsive design principles.",
       technologies: ["Android Studio", "Java", "XML", "Android SDK", "Mobile UI/UX"],
       keyFeatures: [
         "Food delivery mock app with user selection and notifications",
@@ -227,24 +204,22 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Luxe Touch E-commerce Platform",
+      title: "Luxe Touch E-commerce Website",
       category: "webdesign",
       featured: false,
-      description: "Modern e-commerce solution for Luxe Touch featuring automated inventory management, optimized UI/UX design, and seamless customer experience.",
-      fullDescription: "Complete e-commerce platform built with modern web technologies, featuring automated product uploads, inventory management, and conversion-optimized user interface design.",
-      technologies: ["Wix", "JavaScript", "Velo", "E-commerce", "UI/UX"],
+      description: "An online store built on Wix, with curated product pages, a streamlined checkout, and a focus on mobile design and SEO.",
+      technologies: ["Wix", "SEO", "E-commerce", "UI/UX"],
       keyFeatures: [
-        "Automated product management",
-        "Responsive design system",
-        "Payment gateway integration",
-        "SEO optimization"
+        "Curated product pages",
+        "Streamlined checkout and payment integration",
+        "Mobile design and SEO optimization"
       ],
       metrics: {
-        conversion: "40% increase",
-        performance: "< 3s load time",
-        satisfaction: "4.8/5 rating"
+        "organic traffic": "+25%"
       },
-      links: {},
+      links: {
+        live: "https://shopluxetouch.com"
+      },
       status: "Production"
     }
   ];
@@ -266,9 +241,9 @@ const Projects = () => {
     <section className="Projects" id="Projects" data-aos="fade-up">
       <div className="projects-container">
         <div className="projects-header">
-          <h2>Featured Projects</h2>
+          <h2>Projects</h2>
           <p className="projects-subtitle">
-            Showcasing innovative solutions and technical expertise across diverse domains
+            A selection of the products and analysis I've worked on
           </p>
         </div>
 
