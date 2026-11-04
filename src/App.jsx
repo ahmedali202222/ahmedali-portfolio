@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './index.css';
 import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,7 +18,8 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 700,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
       once: true,
       offset: 100,
       easing: 'ease-out-cubic'
@@ -29,14 +29,16 @@ function App() {
   return (
     <>
       <Header />
+      <main>
       <Home />
       <About />
-      <Education />
+      <Projects />
       <Experience />
       <Skills />
-      <Projects />
+      <Education />
       <Testimonials />
       <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaTools, FaCode, FaCogs } from 'react-icons/fa';
+import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaTools, FaCode } from 'react-icons/fa';
 
 const Experience = () => {
   const experiences = [
@@ -15,7 +15,7 @@ const Experience = () => {
       achievements: [
         "Optimized AI-driven camera and barcode systems, enhancing real-time hardware/software sync and boosting accuracy by 9%",
         "Supported maintenance team in equipment repairs, part replacements, and calibration of automated systems",
-        "Authored technical documentation and workflow procedures supporting configuration management, permissions, and audit traceability (transferable to SharePoint administration)",
+        "Authored technical documentation and workflow procedures supporting configuration management, permissions, and audit traceability",
         "Developed 15+ barcode generation templates using GUI application, increasing throughput by 18%",
         "Trained operators, improving proficiency and reducing system errors by 30%"
       ],
@@ -109,27 +109,6 @@ const Experience = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="experience-summary" data-aos="fade-up" data-aos-delay="600">
-          <h3>Professional Highlights</h3>
-          <div className="highlights-grid">
-            <div className="highlight-item">
-              <FaCogs className="highlight-icon" />
-              <h4>System Optimization</h4>
-              <p>Improved system accuracy by 9% and throughput by 18% through technical innovations</p>
-            </div>
-            <div className="highlight-item">
-              <FaCode className="highlight-icon" />
-              <h4>Software Development</h4>
-              <p>Built ETL pipelines and data analysis tools, improving accuracy by 40%</p>
-            </div>
-            <div className="highlight-item">
-              <FaTools className="highlight-icon" />
-              <h4>Cross-functional Skills</h4>
-              <p>Unique combination of hardware expertise and software development capabilities</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

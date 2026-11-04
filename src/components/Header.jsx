@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaDownload } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +8,7 @@ const Header = () => {
   // Handle scroll to update active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['Home', 'About', 'Education', 'Experience', 'Skills', 'Projects', 'Testimonials', 'Contact'];
+      const sections = ['Home', 'About', 'Projects', 'Experience', 'Skills', 'Education', 'Testimonials', 'Contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -29,10 +30,10 @@ const Header = () => {
   const navLinks = [
     { href: '#Home', label: 'Home' },
     { href: '#About', label: 'About' },
-    { href: '#Education', label: 'Education' },
+    { href: '#Projects', label: 'Projects' },
     { href: '#Experience', label: 'Experience' },
     { href: '#Skills', label: 'Skills' },
-    { href: '#Projects', label: 'Projects' },
+    { href: '#Education', label: 'Education' },
     { href: '#Testimonials', label: 'Testimonials' },
     { href: '#Contact', label: 'Contact' }
   ];
@@ -78,7 +79,7 @@ const Header = () => {
             className="resume-btn"
             aria-label="Download Ahmed Ali's Resume"
           >
-            <i className='bx bx-download'></i>
+            <FaDownload aria-hidden="true" />
             Resume
           </a>
         </nav>
@@ -125,7 +126,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               aria-label="Download Ahmed Ali's Resume"
             >
-              <i className='bx bx-download'></i>
+              <FaDownload aria-hidden="true" />
               Download Resume
             </a>
           </nav>

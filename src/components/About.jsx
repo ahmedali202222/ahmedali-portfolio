@@ -1,31 +1,31 @@
 import React from 'react';
-import { FaCode, FaRocket, FaUsers, FaAward } from 'react-icons/fa';
+import { FaAward, FaCheckCircle, FaCode, FaCommentDots, FaRocket, FaUsers } from 'react-icons/fa';
 
 const About = () => {
   const achievements = [
     {
       icon: <FaCode />,
-      number: "15+",
-      label: "Projects Completed",
-      description: "Full-stack applications"
-    },
-    {
-      icon: <FaRocket />,
-      number: "30%",
-      label: "Performance Boost",
-      description: "Average improvement"
+      number: "7",
+      label: "Projects Shown",
+      description: "Web, AI, mobile and analytics"
     },
     {
       icon: <FaUsers />,
-      number: "5+",
-      label: "Team Collaborations",
-      description: "Cross-functional projects"
+      number: "30%",
+      label: "Fewer Operator Errors",
+      description: "Through hands-on training"
+    },
+    {
+      icon: <FaRocket />,
+      number: "17%",
+      label: "Lower Inventory Costs",
+      description: "Refurbishing damaged parts"
     },
     {
       icon: <FaAward />,
       number: "26%",
       label: "Downtime Reduction",
-      description: "System optimization"
+      description: "Calibration and repair"
     }
   ];
 
@@ -36,35 +36,33 @@ const About = () => {
           <h2>About Me</h2>
           <div className="about-text">
             <h3 className="about-subtitle">
-              Passionate Software Engineer & Full-Stack Developer
+              Software Engineer with a hardware background
             </h3>
             <p className="about-main">
-              I'm a dedicated Software Engineer with expertise in building scalable, 
-              high-performance web applications and automation solutions. My technical 
-              journey spans full-stack development, cloud computing, and modern UI/UX design, 
-              enabling me to create seamless digital experiences from concept to deployment.
+              I'm a Computer Science graduate from Wayne State University who builds web
+              applications and automation tools. Alongside my degree I've worked as a Machine
+              Technician, maintaining AI camera systems and production equipment, so I'm used
+              to software that has to work on real machines.
             </p>
             <p className="about-secondary">
-              With a strong foundation in both frontend and backend technologies, I specialize 
-              in React, Python, and cloud platforms. I'm passionate about writing clean, 
-              maintainable code and implementing best practices that ensure optimal performance, 
-              security, and user experience.
+              I work across the frontend and backend, mostly with React, Python and Firebase, and
+              I've shipped projects ranging from a RAG-based history app to a website audit tool.
             </p>
             <div className="about-highlights">
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Full-Stack Development (MERN, Python/Django)</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Cloud Computing (AWS, Firebase, Azure)</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>DevOps & CI/CD Implementation</span>
               </div>
               <div className="highlight-item">
-                <i className='bx bx-check-circle'></i>
+                <FaCheckCircle aria-hidden="true" />
                 <span>Performance Optimization & Scalability</span>
               </div>
             </div>
@@ -97,7 +95,7 @@ const About = () => {
             <h4>Ready to collaborate?</h4>
             <p>Let's discuss how we can bring your ideas to life with cutting-edge technology.</p>
             <a href="#Contact" className="cta-button">
-              <i className='bx bx-message-dots'></i>
+              <FaCommentDots aria-hidden="true" />
               Let's Connect
             </a>
           </div>

@@ -10,9 +10,9 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 - **Frontend Framework:** React 19
 - **Build Tool:** Vite 7
-- **Styling:** Tailwind CSS 4 + Custom CSS
+- **Styling:** Custom CSS
 - **Animations:** AOS (Animate On Scroll)
-- **Icons:** Boxicons & React Icons
+- **Icons:** React Icons
 - **Deployment:** GitHub Pages
 
 ## ✨ Features
@@ -73,30 +73,12 @@ src/
 │   ├── Contact.jsx     # Contact information
 │   └── Footer.jsx      # Site footer
 ├── assets/             # Static assets
-│   └── profile.jpeg    # Profile image
-├── styles/             # CSS files
-│   ├── index.css       # Global styles
-│   └── style.css       # Component styles
+│   └── profile.webp    # Profile image
+├── index.css           # Global styles
+├── style.css           # Component styles
 ├── App.jsx             # Main app component
 └── main.jsx            # React entry point
 ```
-
-## 🎨 Customization
-
-### Colors
-The project uses a custom color palette defined in `tailwind.config.js`:
-- **Primary:** Blue shades for main accents
-- **Dark:** Gray/slate shades for backgrounds
-- **Accent:** Teal shades for highlights
-
-### Fonts
-- **Main Font:** Poppins (Google Fonts)
-- **Fallback:** System fonts for performance
-
-### Animations
-- AOS library for scroll-triggered animations
-- Custom CSS transitions for hover effects
-- Tailwind CSS animation utilities
 
 ## 📱 Responsive Breakpoints
 
@@ -108,15 +90,9 @@ The project uses a custom color palette defined in `tailwind.config.js`:
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
+- `npm run lint` - Run ESLint
 - `npm run preview` - Preview production build
 - `npm run deploy` - Deploy to GitHub Pages
-
-## 📈 Performance
-
-- **Lighthouse Score:** 90+ across all metrics
-- **Bundle Size:** Optimized with Vite
-- **Loading Speed:** < 3s on 3G networks
-- **Image Optimization:** Properly sized assets
 
 ## 🤝 Contributing
 
@@ -125,10 +101,6 @@ The project uses a custom color palette defined in `tailwind.config.js`:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
