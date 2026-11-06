@@ -115,7 +115,7 @@ const Projects = () => {
       image: primeorbitImg,
       category: "fullstack",
       featured: true,
-      description: "Full-stack internal SaaS tool for SEO-based lead generation — discovers domains via Google SERP, audits websites in real time, scores them across SEO/conversion/trust/technical dimensions, and generates personalised outreach emails.",
+      description: "Full-stack PHP/MySQL platform for managing leads, auditing business websites, and organizing personalized outreach — live website analysis scores each site 0–100 across SEO, conversion, trust, and technical factors.",
       technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "REST APIs", "cURL", "Google SERP API", "WHOIS API"],
       keyFeatures: [
         "Real-time website audit pipeline — SEO, conversion, trust & technical scoring (0–100)",
@@ -134,35 +134,38 @@ const Projects = () => {
     },
     {
       id: 1,
-      title: "Promofly – Social Media Scheduling Platform",
+      title: "Promofly – Marketing Automation SaaS",
       image: promoflyImg,
       category: "fullstack",
       featured: true,
-      description: "A social media management app I'm building to help small businesses schedule and publish content across multiple platforms from one place.",
-      technologies: ["React", "Firebase", "Cloud Functions", "Firestore"],
+      description: "A React/Vite web app backed by Firebase Authentication and Cloud Firestore for submitting, managing, and tracking promotional campaigns.",
+      technologies: ["React", "Vite", "Firebase Auth", "Cloud Firestore", "Recharts"],
       keyFeatures: [
-        "Multi-platform post scheduling",
-        "Instagram, Facebook and TikTok integrations",
-        "Serverless publishing pipeline on Cloud Functions"
+        "Role-based access with admin approvals",
+        "Real-time campaign status updates and full CRUD on Firestore",
+        "Analytics dashboards built with Recharts"
       ],
+      metrics: {
+        "initial page load": "~30–40% faster"
+      },
       links: {},
       status: "In Development"
     },
     {
       id: 2,
-      title: "L-CHII – AI-Powered History of Iran",
+      title: "L-CHI – AI-Powered History Search Application",
       image: lchiiImg,
       category: "ai",
       featured: true,
-      description: "A web application that uses an LLM with Retrieval-Augmented Generation (RAG) to answer questions about the contemporary history of Iran in real time.",
-      technologies: ["React", "Flask", "Python", "Firebase", "RAG", "TestRail", "Selenium"],
+      description: "Senior capstone: a Python/Flask application that uses retrieval-augmented generation (RAG) and an LLM to answer history questions from sources.",
+      technologies: ["Python", "Flask", "RAG", "LLM", "Firebase Realtime Database", "Selenium", "TestRail", "Jira"],
       keyFeatures: [
-        "LLM answers grounded with RAG",
-        "Led front-end development in React",
-        "Test cases managed with TestRail and Selenium"
+        "Led frontend development of the search experience",
+        "Flask endpoints with Firebase for auth, search, source management and admin features",
+        "Selenium functional tests, with defects tracked in TestRail and Jira"
       ],
       metrics: {
-        "bug resolution": "60% faster"
+        "functional tests": "7 test cases"
       },
       links: {
         github: "https://github.com/4996wsu/LLM-for-the-Contemporary-History-of-Iran"

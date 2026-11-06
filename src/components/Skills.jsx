@@ -5,22 +5,22 @@ const skillGroups = [
   {
     title: 'Frontend',
     icon: <FaCode />,
-    skills: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Next.js', 'React Native']
+    skills: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Vite', 'Next.js', 'React Native']
   },
   {
     title: 'Backend',
     icon: <FaDatabase />,
-    skills: ['Python', 'Flask', 'Django', 'PHP', 'Node.js', 'REST APIs', 'PostgreSQL', 'MySQL', 'Firebase']
+    skills: ['Java', 'Python', 'C++', 'Flask', 'Django', 'PHP', 'Node.js', 'REST APIs', 'PostgreSQL', 'MySQL', 'Firebase Auth', 'Firestore']
   },
   {
     title: 'Cloud & DevOps',
     icon: <FaCloud />,
-    skills: ['AWS', 'Docker', 'GitHub Actions', 'CI/CD', 'Linux', 'Shell Scripting']
+    skills: ['Git', 'AWS', 'Docker', 'GitHub Actions', 'CI/CD', 'Linux', 'Shell Scripting']
   },
   {
     title: 'Testing & Data',
     icon: <FaTools />,
-    skills: ['Selenium', 'TestRail', 'Jira', 'SQL', 'Tableau', 'Power BI', 'Pandas', 'OpenAI API']
+    skills: ['Selenium', 'TestRail', 'Jira', 'SQL', 'Tableau', 'Power BI', 'Pandas', 'OpenAI API', 'RAG']
   }
 ];
 

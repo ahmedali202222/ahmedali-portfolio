@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Machine Technician",
+      title: "Machine / Controls Technician",
       company: "Wolverine Mailing Solution Group",
       location: "Detroit, MI",
       duration: "Dec 2022 - Present",
@@ -13,13 +13,11 @@ const Experience = () => {
       current: true,
       icon: <FaTools />,
       achievements: [
-        "Optimized AI-driven camera and barcode systems, enhancing real-time hardware/software sync and boosting accuracy by 9%",
-        "Supported maintenance team in equipment repairs, part replacements, and calibration of automated systems",
-        "Authored technical documentation and workflow procedures supporting configuration management, permissions, and audit traceability",
-        "Developed 15+ barcode generation templates using GUI application, increasing throughput by 18%",
-        "Trained operators, improving proficiency and reducing system errors by 30%"
+        "Troubleshoot Windows-based machine-control software and PLC-connected equipment to maintain high system availability and resolve critical technical faults",
+        "Analyze control-system behavior and diagnostic logs to support software updates for legacy production systems and reduce operational downtime",
+        "Maintain comprehensive technical documentation and support systems integration in line with modern engineering principles"
       ],
-      skills: ["Hardware/Software Integration", "Technical Documentation", "System Optimization", "Team Training", "GUI Development"]
+      skills: ["PLC Systems", "Machine-Control Software", "Diagnostics & Log Analysis", "Systems Integration", "Technical Documentation"]
     },
     {
       id: 2,
@@ -31,11 +29,11 @@ const Experience = () => {
       current: false,
       icon: <FaCode />,
       achievements: [
-        "Designed and implemented ETL-style data pipelines using SQL and JavaScript, integrating CSV/JSON datasets for QA analysis and improving accuracy by 40%",
-        "Authored technical documentation and UI/UX guides, increasing internal tool adoption by 40%",
-        "Collaborated in an Agile team environment, contributing to feature delivery and resolving client issues efficiently"
+        "Develop JavaScript and SQL workflows using object-oriented programming to transform CSV/JSON data for QA analysis and internal tools",
+        "Participate in peer code reviews with Git and manage documentation throughout the development lifecycle",
+        "Support adoption of modern practices like CI/CD and Docker to improve development on legacy codebases"
       ],
-      skills: ["ETL Pipelines", "SQL", "JavaScript", "Technical Documentation", "Agile Development", "UI/UX Design"]
+      skills: ["JavaScript", "SQL", "OOP", "Git", "CI/CD", "Docker"]
     }
   ];
 
