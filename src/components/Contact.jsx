@@ -25,20 +25,28 @@ const Contact = () => {
     setSubmitStatus('');
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(formData.subject || 'Portfolio Contact Form');
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      );
-      
-      // Open default email client
-      window.location.href = `mailto:ahmedaliofficial90@gmail.com?subject=${subject}&body=${body}`;
-      
+      const response = await fetch('https://formsubmit.co/ajax/ahmedaliofficial90@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _subject: formData.subject || 'New message from your portfolio',
+          _replyto: formData.email,
+          _template: 'table',
+          _captcha: 'false',
+          message: formData.message
+        })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.success === false || result.success === 'false') {
+        throw new Error('Send failed');
+      }
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-        } catch {
-          setSubmitStatus('error');
-        } finally {
+    } catch {
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -176,12 +184,12 @@ const Contact = () => {
             aria-label="Send message"
           >
             <FaPaperPlane />
-            {isSubmitting ? 'Opening Email Client...' : 'Send Message'}
+            {isSubmitting ? 'Sending…' : 'Send Message'}
           </button>
 
           {submitStatus === 'success' && (
             <div className="status-message success" role="status" aria-live="polite">
-              Email client opened successfully! Please send the email from your email app.
+              Thanks! Your message was sent. I'll get back to you soon.
             </div>
           )}
 

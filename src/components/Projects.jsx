@@ -1,12 +1,9 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import primeorbitImg from '../assets/projects/primeorbit.svg';
 import promoflyImg from '../assets/projects/promofly.svg';
 import lchiiImg from '../assets/projects/lchii.svg';
-import datacenterImg from '../assets/projects/datacenter.svg';
-import uxAnalysisImg from '../assets/projects/ux-analysis.svg';
 import androidImg from '../assets/projects/android.svg';
-import luxetouchImg from '../assets/projects/luxetouch.svg';
 import { FaBrain, FaChartBar, FaCode, FaCommentDots, FaExternalLinkAlt, FaGithub, FaMobileAlt, FaPaintBrush, FaUsers } from 'react-icons/fa';
 
 const categoryIcons = {
@@ -106,7 +103,6 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
 
   const projects = [
     {
@@ -173,42 +169,6 @@ const Projects = () => {
       status: "Completed"
     },
     {
-      id: 3,
-      title: "Data Center Site Selection Analysis",
-      image: datacenterImg,
-      category: "analytics",
-      featured: false,
-      description: "An analysis exercise using energy and sustainability data to compare locations for an Intel data center, identifying the Northwest as a leader in renewable resources.",
-      technologies: ["SQL", "SQLPad", "Tableau"],
-      keyFeatures: [
-        "Energy data compared across all 50 states",
-        "Sustainability analysis by region",
-        "Tableau visualizations and recommendations"
-      ],
-      metrics: {
-        coverage: "50 states"
-      },
-      links: {},
-      status: "Completed"
-    },
-    {
-      id: 4,
-      title: "Entertainment Industry UX Analysis",
-      image: uxAnalysisImg,
-      category: "analytics",
-      featured: false,
-      description: "Comparative analysis of user engagement patterns between Grammy and AMA websites, identifying UX improvement opportunities.",
-      technologies: ["Python", "Pandas", "Plotly", "SQL", "Data Visualization"],
-      keyFeatures: [
-        "Cross-platform engagement analysis",
-        "User behavior pattern identification",
-        "Interactive dashboard creation",
-        "UX improvement recommendations"
-      ],
-      links: {},
-      status: "Completed"
-    },
-    {
       id: 5,
       title: "Android App Projects",
       image: androidImg,
@@ -229,42 +189,8 @@ const Projects = () => {
       },
       links: {},
       status: "Completed"
-    },
-    {
-      id: 6,
-      title: "Luxe Touch E-commerce Website",
-      image: luxetouchImg,
-      category: "webdesign",
-      featured: false,
-      description: "An online store built on Wix, with curated product pages, a streamlined checkout, and a focus on mobile design and SEO.",
-      technologies: ["Wix", "SEO", "E-commerce", "UI/UX"],
-      keyFeatures: [
-        "Curated product pages",
-        "Streamlined checkout and payment integration",
-        "Mobile design and SEO optimization"
-      ],
-      metrics: {
-        "organic traffic": "+25%"
-      },
-      links: {
-        live: "https://shopluxetouch.com"
-      },
-      status: "Production"
     }
   ];
-
-  const categories = [
-    { id: 'all', label: 'All Projects', icon: <FaCode /> },
-    { id: 'fullstack', label: 'Full-Stack', icon: <FaCode /> },
-    { id: 'ai', label: 'AI/ML', icon: <FaChartBar /> },
-    { id: 'analytics', label: 'Analytics', icon: <FaChartBar /> },
-    { id: 'mobile', label: 'Mobile Apps', icon: <FaUsers /> },
-    { id: 'webdesign', label: 'Web Design', icon: <FaExternalLinkAlt /> }
-  ];
-
-  const filteredProjects = selectedCategory === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === selectedCategory);
 
   return (
     <section className="Projects" id="Projects" data-aos="fade-up">
@@ -272,27 +198,13 @@ const Projects = () => {
         <div className="projects-header">
           <h2>Projects</h2>
           <p className="projects-subtitle">
-            A selection of the products and analysis I've worked on
+            The products I've built, from lead-generation tools to AI search
           </p>
-        </div>
-
-        {/* Category Filter */}
-        <div className="projects-filter" data-aos="fade-up" data-aos-delay="200">
-          {categories.map(category => (
-            <button
-              key={category.id}
-              className={`filter-btn ${selectedCategory === category.id ? 'active' : ''}`}
-              onClick={() => setSelectedCategory(category.id)}
-            >
-              <span className="filter-icon">{category.icon}</span>
-              <span className="filter-text">{category.label}</span>
-            </button>
-          ))}
         </div>
 
         {/* Projects Grid */}
         <div className="projects-grid" data-aos="fade-up" data-aos-delay="400">
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div key={project.id} style={{ animationDelay: `${index * 100}ms` }}>
               <ProjectCard project={project} />
             </div>

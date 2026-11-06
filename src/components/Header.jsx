@@ -8,7 +8,7 @@ const Header = () => {
   // Handle scroll to update active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['Home', 'About', 'Projects', 'Experience', 'Skills', 'Education', 'Testimonials', 'Contact'];
+      const sections = ['Home', 'About', 'Projects', 'Experience', 'Skills', 'Education', 'Contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -34,7 +34,6 @@ const Header = () => {
     { href: '#Experience', label: 'Experience' },
     { href: '#Skills', label: 'Skills' },
     { href: '#Education', label: 'Education' },
-    { href: '#Testimonials', label: 'Testimonials' },
     { href: '#Contact', label: 'Contact' }
   ];
 

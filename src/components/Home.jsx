@@ -24,16 +24,16 @@ const Home = () => {
         </p>
         <div className="stats-preview" data-aos="fade-up" data-aos-delay="500">
           <div className="stat-item">
-            <span className="stat-number">7</span>
-            <span className="stat-label">Projects</span>
+            <span className="stat-number">4</span>
+            <span className="stat-label">Featured Projects</span>
           </div>
           <div className="stat-item">
             <span className="stat-number">B.S.</span>
             <span className="stat-label">Computer Science</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">26%</span>
-            <span className="stat-label">Downtime Reduced</span>
+            <span className="stat-number">2+ yrs</span>
+            <span className="stat-label">Technical Experience</span>
           </div>
         </div>
         <div className="Home-actions" data-aos="fade-up" data-aos-delay="600">

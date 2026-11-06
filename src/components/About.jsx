@@ -4,28 +4,28 @@ import { FaAward, FaCheckCircle, FaCode, FaCommentDots, FaRocket, FaUsers } from
 const About = () => {
   const achievements = [
     {
-      icon: <FaCode />,
-      number: "7",
-      label: "Projects Shown",
-      description: "Web, AI, mobile and analytics"
-    },
-    {
-      icon: <FaUsers />,
-      number: "30%",
-      label: "Fewer Operator Errors",
-      description: "Through hands-on training"
-    },
-    {
       icon: <FaRocket />,
-      number: "17%",
-      label: "Lower Inventory Costs",
-      description: "Refurbishing damaged parts"
+      number: "30–40%",
+      label: "Faster Page Loads",
+      description: "Optimizing Promofly's React components and Firestore queries"
     },
     {
       icon: <FaAward />,
-      number: "26%",
-      label: "Downtime Reduction",
-      description: "Calibration and repair"
+      number: "0–100",
+      label: "Website Audit Scores",
+      description: "PrimeOrbit's live SEO, conversion, trust and technical scoring"
+    },
+    {
+      icon: <FaCode />,
+      number: "2+ yrs",
+      label: "Technical Experience",
+      description: "Systems engineering and software support"
+    },
+    {
+      icon: <FaUsers />,
+      number: "B.S.",
+      label: "Computer Science",
+      description: "Wayne State University, 2024"
     }
   ];
 
@@ -41,7 +41,7 @@ const About = () => {
             <p className="about-main">
               I'm a Computer Science graduate from Wayne State University who builds web
               applications and automation tools. Alongside my degree I've worked as a Machine
-              Technician, maintaining AI camera systems and production equipment, so I'm used
+              Technician, troubleshooting machine-control software and PLC-connected equipment, so I'm used
               to software that has to work on real machines.
             </p>
             <p className="about-secondary">
@@ -51,19 +51,19 @@ const About = () => {
             <div className="about-highlights">
               <div className="highlight-item">
                 <FaCheckCircle aria-hidden="true" />
-                <span>Full-Stack Development (MERN, Python/Django)</span>
+                <span>Full-Stack Development (React, Flask, PHP)</span>
               </div>
               <div className="highlight-item">
                 <FaCheckCircle aria-hidden="true" />
-                <span>Cloud Computing (AWS, Firebase, Azure)</span>
+                <span>Cloud & Data (Firebase, Firestore, MySQL, AWS)</span>
               </div>
               <div className="highlight-item">
                 <FaCheckCircle aria-hidden="true" />
-                <span>DevOps & CI/CD Implementation</span>
+                <span>Git, Docker & CI/CD</span>
               </div>
               <div className="highlight-item">
                 <FaCheckCircle aria-hidden="true" />
-                <span>Performance Optimization & Scalability</span>
+                <span>AI Search with RAG & LLMs</span>
               </div>
             </div>
           </div>
