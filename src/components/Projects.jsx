@@ -1,5 +1,12 @@
 
 import React, { useState } from 'react';
+import primeorbitImg from '../assets/projects/primeorbit.svg';
+import promoflyImg from '../assets/projects/promofly.svg';
+import lchiiImg from '../assets/projects/lchii.svg';
+import datacenterImg from '../assets/projects/datacenter.svg';
+import uxAnalysisImg from '../assets/projects/ux-analysis.svg';
+import androidImg from '../assets/projects/android.svg';
+import luxetouchImg from '../assets/projects/luxetouch.svg';
 import { FaBrain, FaChartBar, FaCode, FaCommentDots, FaExternalLinkAlt, FaGithub, FaMobileAlt, FaPaintBrush, FaUsers } from 'react-icons/fa';
 
 const categoryIcons = {
@@ -16,9 +23,21 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className={`project-card ${project.featured ? 'featured' : ''}`} data-aos="fade-up">
-      <div className={`project-banner ${project.category}`} aria-hidden="true">
-        {categoryIcons[project.category]}
-      </div>
+      {project.image ? (
+        <div className="project-thumb">
+          <img
+            src={project.image}
+            alt={`Preview of ${project.title.split(' – ')[0]}`}
+            loading="lazy"
+            width="800"
+            height="450"
+          />
+        </div>
+      ) : (
+        <div className={`project-banner ${project.category}`} aria-hidden="true">
+          {categoryIcons[project.category]}
+        </div>
+      )}
       <div className="project-status">
         <span className={`status-badge ${project.status.toLowerCase().replace(/\s+/g, '-')}`}>
           {project.status}
@@ -93,6 +112,7 @@ const Projects = () => {
     {
       id: 0,
       title: "PrimeOrbit – Lead Generation & Website Audit Tool",
+      image: primeorbitImg,
       category: "fullstack",
       featured: true,
       description: "Full-stack internal SaaS tool for SEO-based lead generation — discovers domains via Google SERP, audits websites in real time, scores them across SEO/conversion/trust/technical dimensions, and generates personalised outreach emails.",
@@ -115,6 +135,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Promofly – Social Media Scheduling Platform",
+      image: promoflyImg,
       category: "fullstack",
       featured: true,
       description: "A social media management app I'm building to help small businesses schedule and publish content across multiple platforms from one place.",
@@ -130,6 +151,7 @@ const Projects = () => {
     {
       id: 2,
       title: "L-CHII – AI-Powered History of Iran",
+      image: lchiiImg,
       category: "ai",
       featured: true,
       description: "A web application that uses an LLM with Retrieval-Augmented Generation (RAG) to answer questions about the contemporary history of Iran in real time.",
@@ -150,6 +172,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Data Center Site Selection Analysis",
+      image: datacenterImg,
       category: "analytics",
       featured: false,
       description: "An analysis exercise using energy and sustainability data to compare locations for an Intel data center, identifying the Northwest as a leader in renewable resources.",
@@ -168,6 +191,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Entertainment Industry UX Analysis",
+      image: uxAnalysisImg,
       category: "analytics",
       featured: false,
       description: "Comparative analysis of user engagement patterns between Grammy and AMA websites, identifying UX improvement opportunities.",
@@ -184,6 +208,7 @@ const Projects = () => {
     {
       id: 5,
       title: "Android App Projects",
+      image: androidImg,
       category: "mobile",
       featured: true,
       description: "Comprehensive collection of 4+ experimental Android applications built with Java and Android Studio, showcasing practical UI/UX implementation, user input handling, and system-level integrations.",
@@ -205,6 +230,7 @@ const Projects = () => {
     {
       id: 6,
       title: "Luxe Touch E-commerce Website",
+      image: luxetouchImg,
       category: "webdesign",
       featured: false,
       description: "An online store built on Wix, with curated product pages, a streamlined checkout, and a focus on mobile design and SEO.",

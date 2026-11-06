@@ -74,7 +74,7 @@ const Header = () => {
             </a>
           ))}
           <a 
-            href="./Ahmed_Ali_Software_Engineer_Resume-4.pdf" 
+            href="./Ahmed_Ali_Resume.pdf" 
             download 
             className="resume-btn"
             aria-label="Download Ahmed Ali's Resume"
@@ -120,7 +120,7 @@ const Header = () => {
               </a>
             ))}
             <a 
-              href="./Ahmed_Ali_Software_Engineer_Resume-4.pdf" 
+              href="./Ahmed_Ali_Resume.pdf" 
               download 
               className="mobile-resume-btn"
               onClick={() => setIsMenuOpen(false)}
