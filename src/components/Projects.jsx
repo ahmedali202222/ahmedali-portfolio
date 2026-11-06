@@ -16,7 +16,7 @@ const categoryIcons = {
 
 const ProjectCard = ({ project }) => {
   const metrics = Object.entries(project.metrics ?? {});
-  const { live, github, report } = project.links ?? {};
+  const { live, liveLabel, github, report } = project.links ?? {};
 
   return (
     <div className={`project-card ${project.featured ? 'featured' : ''}`} data-aos="fade-up">
@@ -82,7 +82,7 @@ const ProjectCard = ({ project }) => {
           <div className="project-links">
             {live && (
               <a href={live} className="project-link" target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt aria-hidden="true" /> Live site
+                <FaExternalLinkAlt aria-hidden="true" /> {liveLabel ?? 'Live site'}
               </a>
             )}
             {github && (
@@ -125,7 +125,10 @@ const Projects = () => {
         export: "Smartlead CSV",
         pipeline: "Fully async"
       },
-      links: {},
+      links: {
+        live: "https://www.primeorbitdesign.com/",
+        liveLabel: "Agency site"
+      },
       status: "Production"
     },
     {
@@ -144,7 +147,10 @@ const Projects = () => {
       metrics: {
         "initial page load": "~30–40% faster"
       },
-      links: {},
+      links: {
+        live: "https://promptly-4f67d.web.app/",
+        liveLabel: "Live app"
+      },
       status: "In Development"
     },
     {
